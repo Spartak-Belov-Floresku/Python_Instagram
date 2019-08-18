@@ -23,7 +23,6 @@ class Browser():
         log_but = self.__driver.find_element_by_xpath("//a[@href='/accounts/login/?source=auth_switcher']")
         log_but.click()
         self.__Sec(3)
-        return self.__driver
 
     def Login_To_Account(self):
         user_name = self.__driver.find_element_by_xpath("//input[@name='username']")
